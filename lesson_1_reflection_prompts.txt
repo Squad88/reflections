@@ -1,33 +1,63 @@
-How did viewing a diff between two versions of a file help you see the bug that
+# How did viewing a diff between two versions of a file help you see the bug that was
+introduced?
+
+The files presented allowed me to view changes that were made between the files -
+this is incredibly useful especially those times you work on a file then poof its gone;
+You can't remember what you did. I learned to go to the directory of a file using ls and
+cd then use diff -u to see the differences in the file whereas, the -u makes the file
+have better output.
+
+"Questions by instructors"
+# How did viewing a diff between two versions of a file help you see the bug that
 was introduced?
 
-    Fill in your answer here
+    It showed me the changes made in the two files which was easy to spot.
 
-How could having easy access to the entire history of a file make you a more
+# How could having easy access to the entire history of a file make you a more
 efficient programmer in the long term?
 
-    Fill in your answer here
+    Sometimes i've made changes in my files and i forget what i did previously.
+    Version control could help me overcome that.
+    By recording time,edits, collaboration merges for example.
 
-What do you think are the pros and cons of manually choosing when to create a
+# What do you think are the pros and cons of manually choosing when to create a
 commit, like you do in Git, vs having versions automatically saved, like Google
 docs does?
 
-    Fill in your answer here
+	Pros: You have the power to choose what changes have been added to the file.
+		  They can use the rule of thumb one commit per logical change.
+	Cons: You can abuse the power of your commits by adding to too big or too small
+		  commits
+		  Failure to follow the rules.
 
-Why do you think some version control systems, like Git, allow saving multiple
+# Why do you think some version control systems, like Git, allow saving multiple
 files in one commit, while others, like Google Docs, treat each file separately?
+** ask about
 
-    Fill in your answer here
+    I think it's because git works in the background after staging the file and is able to
+    see everything your doing.
+    Whereas, the other version control systems can only rely on what you've uploaded?
 
-How can you use the commands git log and git diff to view the history of files?
+# How can you use the commands git log and git diff to view the history of files?
 
-    Fill in your answer here
+    Git log shows me all the changes made to the files in the working directory
+    (from newest at the top to the oldest at the bottom).
+    onto that the time and the commit id. Using the commit id, i can use git diff to
+    see changes in subsequent files copy pasting the specific ids to this command
+    git diff commit id commit id.
 
-How might using version control make you more confident to make changes that
+# How might using version control make you more confident to make changes that
 could break something?
 
-    Fill in your answer here
+    In the previous example for asteroids, it seems that there was a bug. After using git
+    checkout on one of our commits(considered to be buggy). We see that there are after
+    restoring it to a previous version in fact, there is a bug. I use git checkout on the
+    last commit to restore the bug and go through the commits.
 
-Now that you have your workspace set up, what do you want to try using Git for?
+# Now that you have your workspace set up, what do you want to try using Git for?
 
-    Fill in your answer here
+    Any projects i'm doing like the skate project should be tracked when i'm writing
+    the .rmd file.
+
+# scp command used to clone a repo from another computer. Means secure copy. Move file
+from one directory to another
