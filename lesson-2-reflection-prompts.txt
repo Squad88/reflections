@@ -1,18 +1,54 @@
-What happens when you initialize a repository? Why do you need to do it?
+# What happens when you initialize a repository? Why do you need to do it?
+	** git init **
+	A .git file is made in the repository. For git to track changes in the repository to
+	the files.
+	Additionally, to see any changes i use ** git status **
 
-How is the staging area different from the working directory and the repository?
+
+# How is the staging area different from the working directory and the repository?
 What value do you think it offers?
+	The staging area seems to be the place where you add file(** git add ** ) to allow any
+	tracking of a file or multiple files. This will help us achieve one commit per logical
+	test.
 
-How can you use the staging area to make sure you have one commit per logical
+# How can you use the staging area to make sure you have one commit per logical
 change?
+	** git diff -- staged **
+	Compares the staging area and the most recent commit. Thus, if i make changes to the
+	a file in the working directory, i can confirm if those are the right changes with the
+	above command. Also, if they satisfy one commit per logical change to proceed.
 
-What are some situations when branches would be helpful in keeping your history
+# What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+	** git branch **
+	When making different versions of the master file e.g for another language. Yet, it
+	doesn't change the master file but, allows for changes in either and they don't affect
+	master or branch.
 
-How do the diagrams help you visualize the branch structure?
+# How do the diagrams help you visualize the branch structure?
+	The diagram could show the flow of the commits from master, to the intersection
+	of the master commits and branches. It can also show the branches which are not
+	part of either branch or master.
 
-What is the result of merging two branches together? Why do we represent it in
+# What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+	The coins branch and the master branch are brought together. Therefore, some commits
+	were retained others were not
+	i learned about these three commands
+	** git merge **
+	brings two branches together and returns the intersection between the two commits
+	and files.
+	** git branch -d branch
+	removes an already merged branches
+	** git show **
+	shows u a commit made compared to the parent
+The digram was important step to allow visualisation of what the git commands are doing.
 
-What are the pros and cons of Git's automatic merging vs. always doing merges
+# What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+	Pros:
+	Well, upon fixing a merge error which could take some time depending on the file.
+	Git's automatic feature helps the now tired user to do less work.
+	Cons:
+	If you've made a mistake, git will still merge. Even if its wrong for you and right
+	for git.
