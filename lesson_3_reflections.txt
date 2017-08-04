@@ -1,2 +1,6 @@
 When would you want to create a remot repository rather than keeping all your work local?
 When i will work with other people who works in diferent places.
+
+Describe the differences between forks, clones, and branches. When would you use one instead of another
+
+forks son copias de repositorios en github mientras que los clones son ya sea copia del repositoria en de github a la pc o dos en la misma pc.
